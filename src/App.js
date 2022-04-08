@@ -5,17 +5,24 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import LandingMessage from './Pages/Home/LandingMessage/LandingMessage'
-import Header from './Pages/Home/Header/Header';
+import AddService from './Pages/Action/AddService/AddService';
+import Home from './Pages/Home/Home/Home'
+import Header from './Pages/Shared/Header/Header'
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Header></Header>
-        <LandingMessage></LandingMessage>
-      </div>
-    </BrowserRouter>
+    <div className="">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/addService' element={<AddService />} />
+
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

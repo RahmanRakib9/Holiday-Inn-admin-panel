@@ -8,8 +8,8 @@ const Header = () => {
           <Navbar bg="dark" variant="dark">
                <Container>
                     <Link to='/' className='header-link'>Home</Link>
-                    <Link to='/addEvent' className='header-link'>Add Events</Link>
-                    <Link to='/editEvent' className='header-link'>Event List</Link>
+                    <Link to='/addService' className='header-link'>Add Service</Link>
+                    <Link to='/serviceList' className='header-link'>Service List</Link>
                </Container>
           </Navbar>
      );
