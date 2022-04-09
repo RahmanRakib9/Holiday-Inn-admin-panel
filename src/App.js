@@ -8,6 +8,8 @@ import {
 import AddService from './Pages/Action/AddService/AddService';
 import Home from './Pages/Home/Home/Home'
 import Header from './Pages/Shared/Header/Header'
+import Services from './Pages/Action/ServiceList/Services/Services';
+import EditService from './Pages/Action/ServiceList/EditService/EditService';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/addService' element={<AddService />} />
+          <Route path='/serviceList' element={<Services />} />
+          <Route path='/edit/:id' element={<EditService />} />
 
         </Routes>
       </BrowserRouter>
